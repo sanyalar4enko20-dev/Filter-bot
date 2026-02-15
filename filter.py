@@ -1,10 +1,11 @@
 import asyncio
 import sqlite3
+import os
 from aiogram import Bot, Dispatcher, F, types
 from aiogram.filters import CommandStart
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-TOKEN = "8534611866:AAGAR1mukLG5xrcsYby2A_7AwcgIWwiVZ04"
+TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(TOKEN)
 dp = Dispatcher()
